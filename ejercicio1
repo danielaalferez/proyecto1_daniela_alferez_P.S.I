@@ -1,0 +1,22 @@
+#Ejercicio 34: ¿par o impar?
+#Escriba un programa que lea un número entero del usuario. Entonces su programa debería
+#mostrar un mensaje indicando si el entero es par o impar.
+
+numero =  int ( input ( 'Inserte un número entero:' ))
+
+n  = ( numero  /  2 )
+m  = ( numero % 2   ) 
+
+if  m  <=  0.0 :
+    
+    print ( 'Tiene un número par' )
+    
+elif  m  >=  1 :
+    
+    print ( 'Tiene un número impar' )
+    
+   
+ 
+ 
+
+ 

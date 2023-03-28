@@ -1,0 +1,30 @@
+ #Ejercicio 42: Frecuencia para notar
+#En la pregunta anterior, convirtió el nombre de la nota en frecuencia. en esta pregunta
+#escribirá un programa que invierta ese proceso. Comience leyendo una frecuencia
+#del usuario Si la frecuencia está dentro de un Hertz de un valor listado en la tabla en
+#la pregunta anterior luego informe el nombre de la nota. De lo contrario informa que el
+#la frecuencia no corresponde a una nota conocida. En este ejercicio solo necesitas
+#considere las notas enumeradas en la tabla. No hay necesidad de considerar notas de otros
+
+frecuencia  =  float ( input ( 'Insertar frecuencia en Hz:' ))
+
+notaF  =  ''
+
+if  frecuencia  >  261.63  -  1  and frecuencia  <  261.63  +  1 :
+	notaF  =  'C'
+elif  frecuencia  >  293.66  -  1  and  frecuencia  <  293.66  +  1 :
+	notaF  =  'D'
+elif  frecuencia  >  329.63  -  1  and frecuencia  <  329.63  +  1 :
+	notaF  =  'E'
+elif  frecuencia  >  349.23  -  1  and  frecuencia  <  349.23  +  1 :
+	notaF  =  'F'
+elif  frecuencia  >  392.00  -  1  and  frecuencia  <  392.00  +  1 :
+	notaF  =  'G'
+elif  frecuencia  >  440.00  -  1  and  frecuencia  <  440.00  +  1 :
+	notaF  =  'A'
+elif  frecuencia  >  493.88  -  1  and  frecuencia  <  493.88  +  1 :
+	notaF  =  'B'
+if  notaF  ==  '' :
+	print ( 'Esta no es una nota que corresponde con la frecuencia' )
+else :
+	print ( 'La frecuencia es' ,( notaF ))

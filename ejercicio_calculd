@@ -1,0 +1,54 @@
+
+
+def calculadora():
+    print("¡Bienvenido a la calculadora!")
+
+def suma(numero1,numero2):
+    resultado=numero1+numero2
+    return resultado
+
+def restar(numero1,numero2):
+    resultado= numero1-numero2
+    return resultado
+
+def multiplicacion(numero1,numero2):
+    resultado= numero1*numero2
+    return resultado
+
+def division(numero1,numero2):
+    if(numero2 !=0):
+        resultado= numero1/numero2
+    else:
+        resultado="no se puede dividir en cero"
+    return resultado
+
+ 
+
+
+while True:
+
+
+    opcion = input("¿Qué operación deseas realizar? (a)suma, b)resta, c)multiplicacion, d)division): ")
+
+    if opcion in ('a', 'b', 'c', 'd'):
+        numero1 = int(input("Ingresa el primer número: "))
+        numero2 = int(input("Ingresa el segundo número: "))
+
+        if opcion == 'a':
+            print(numero1, "+", numero2, "=", suma(numero1, numero2))
+
+        elif opcion == 'b':
+            print(numero1, "-", numero2, "=", restar(numero1, numero2))
+
+        elif opcion == 'c':
+            print(numero1, "*", numero2, "=", multiplicacion(numero1, numero2))
+
+        elif opcion == 'd':
+            try:
+                print(numero1, "/", numero2, "=", division(numero1, numero2))
+            except ValueError as e:
+                print("Error:", e)
+        
+        break
+    else:
+        print("Opción inválida. Por favor, ingrese una opción válida (1/2/3/4).")

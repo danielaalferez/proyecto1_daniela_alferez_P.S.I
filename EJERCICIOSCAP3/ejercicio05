@@ -1,0 +1,12 @@
+#Ejercicio 75: Máximo Común Divisor
+
+
+numero1=int(input("ingrese un numero entero"))
+numero2=int(input("ingrese un numero entero"))
+
+maximo=min(numero1, numero2)
+
+while numero1%maximo != 0 or numero2%maximo !=0:
+    maximo=maximo-1
+
+print("el máximo común divisor de", numero1,"y",numero2, "es", maximo)

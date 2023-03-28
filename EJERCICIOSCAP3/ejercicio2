@@ -1,0 +1,34 @@
+#Ejercicio 65: Calcular el Perímetro de un Polígono 31
+
+import math
+
+def distancia(x1, y1, x2, y2):
+    return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+
+x1 = float(input("Introduce la coordenada x del primer punto: "))
+y1 = float(input("Introduce la coordenada y del primer punto: "))
+
+# Inicializar el perímetro y las coordenadas del punto anterior
+perimetro = 0
+x_anterior = x1
+y_anterior = y1
+
+
+while True:
+    x2_str = input("Introduce la coordenada x del siguiente punto (deja en blanco para terminar): ")
+    if x2_str == "":
+    
+        perimetro += distancia(x_anterior, y_anterior, x1, y1)
+        break
+    else:
+        x2 = float(x2_str)
+        y2 = float(input("Introduce la coordenada y del siguiente punto: "))
+        # Calcular la distancia entre los puntos y sumarla al perímetro
+        perimetro += distancia(x_anterior, y_anterior, x2, y2)
+        # Actualizar las coordenadas del punto anterior
+        x_anterior = x2
+        y_anterior = y2
+
+# Mostrar el resultado
+print("El perímetro del polígono es:", perimetro)

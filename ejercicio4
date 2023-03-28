@@ -1,0 +1,51 @@
+  #Ejercicio 51: Calificación de letras a puntos de calificación
+
+grado  =  input( '¿Cuál es la calificación de la letra?:' )
+
+nota  =  ''
+
+while(True) :
+    if  grado  ==  'A+' :
+        nota  =  4.0
+        break
+    elif  grado  ==  'A' :
+        nota  =  4.0
+        break
+    elif grado   ==  'A-' :
+        nota  =  3.7
+        break
+    elif grado ==  'B+' :
+        nota  =  3.3
+        break
+    elif grado  ==  'B' :
+        nota  =  3.0
+        break
+    elif grado ==  'B-' :
+        nota  =  2.7
+        break
+    elif grado ==  'C+' :
+        nota  =  2.3
+        break
+    elif  grado  == 'C' :
+        nota  =  2.0
+        break
+    elif  grado == 'C-' :
+        nota  =  1.7
+        break
+    elif  grado ==  'D+':
+        nota  =  1.3
+        break
+    elif  grado ==  'D' :
+        nota  =  1.0
+        break
+    elif  grado ==  'F' :
+        nota  =  0
+        break
+    else:
+        print ( 'Entrada inválida.' )
+        grado  =  int( '¿Cuál es la calificación de la letra?' )
+       
+        nota  =  0 
+        
+print()
+print ( 'Puntos de calificación:' , ( nota ))

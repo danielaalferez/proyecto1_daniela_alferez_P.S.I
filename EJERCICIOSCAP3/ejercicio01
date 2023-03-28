@@ -1,0 +1,44 @@
+#Ejercicio 66: Calcule un promedio de calificaciones
+
+#El ejercicio 51 incluía una tabla que muestra la conversión de calificaciones con letras a calificación
+#puntos en una institución académica en particular. En este ejercicio calcularás la
+#promedio de calificaciones de un número arbitrario de calificaciones con letras ingresadas por el usuario. El
+#el usuario ingresará una línea en blanco para indicar que se han proporcionado todas las calificaciones. Para
+#ejemplo, si el usuario ingresa A, seguido de C+, seguido de B, seguido de un espacio en blanco
+#entonces su programa debe reportar un promedio de calificaciones de 3.1.
+#Puede encontrar útil su solución al ejercicio 51 al completar este ejercicio.
+
+contador  =  0
+print ( "Este programa calculará su promedio de calificaciones, ingrese calificaciones como A+, A, A-, B+, B, B-, C+,C,C-, D+, D-, F" )
+número  = int( input ( "¿A cuántos grados le gustaría ingresar?: " ))
+puntuación_total  =  0
+while  contador  <  número :
+  grado  =  input ( "Ingrese su grado: " )
+  if  grado  ==  "A+" :
+    puntuación_total  +=  4.0
+  if  grado  ==  "A" :
+    puntuación_total  +=  4.0
+  if grado  ==  "A-" :
+    puntuación_total  +=  3.7
+  if  grado  ==  "B+" :
+    puntuación_total  +=  3.3
+  if  grado  ==  "B" :
+    puntuación_total  +=  3.0
+  if  grado  ==  "B-" :
+    puntuación_total  +=  2.7
+  if  grado  ==  "C+" :
+    puntuación_total  +=  2.3
+  if  grado  ==  "C" :
+    puntuación_total  +=  2.0
+  if  grado  ==  "C-" :
+    puntuación_total  +=  1.7
+  if  grado  ==  "D+" :
+    puntuación_total  +=  1.3
+  if  grado  ==  "D" :
+    puntuación_total  +=  1.0
+  if  grado  ==  "F" :
+    puntuación_total  +=  0.0
+  contador  =  contador  +  1
+
+calificación_final  =  puntuación_total / número
+print ( "su promedio es:" , calificación_final )

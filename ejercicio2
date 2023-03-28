@@ -1,0 +1,22 @@
+ #Ejercicio 40: Nombra ese Triángulo
+
+#Un triángulo se puede clasificar según la longitud de sus lados como equilátero, isósceles
+#o escaleno. Los 3 lados de un triángulo equilátero tienen la misma longitud. un isósceles
+#triángulo tiene dos lados que tienen la misma longitud y un tercer lado que es diferente
+#longitud. Si todos los lados tienen diferentes longitudes, entonces el triángulo es escaleno.
+
+#Escribe un programa que lea las longitudes de 3 lados de un triángulo del usuario.
+#Mostrar un mensaje indicando el tipo de triangulo
+
+
+print ( "Ingrese las longitudes de los lados del triangulo: " )
+x  =  int ( input ( "x: " ))
+y  =  int ( input ( "y: " ))
+z  =  int ( input ( "z: " ))
+
+if x  ==  y  ==  z :
+	print ( "triángulo equilátero" )
+elif  x == y  or  y == z  or  z == x :
+	print ( "triángulo isósceles" )
+else :
+	print (" triángulo escaleno  ")

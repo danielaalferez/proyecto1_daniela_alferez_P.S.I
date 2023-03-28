@@ -1,0 +1,13 @@
+#Ejercicio 74: Tabla de multiplicar
+
+#En este ejercicio, creará un programa que muestre una tabla de multiplicar que
+#muestra los productos de todas las combinaciones de números enteros desde 1 por 1 hasta e incluyendo
+#10 por 10. Tu tabla de multiplicar debe incluir una fila de etiquetas en la parte superior
+#que contenga los números del 1 al 10. También debe incluir etiquetas a la izquierda
+#lado que consta de los números del 1 al 10. El resultado esperado del programa
+#se muestra a continuación:
+
+numero  =  int ( input ( 'Ingrese un número:' ))
+
+for i  in  range ( 1 , 11 ):
+   print ( numero , 'x' , i , '=' , numero * i )

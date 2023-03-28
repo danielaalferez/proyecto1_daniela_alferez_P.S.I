@@ -1,0 +1,29 @@
+#Ejercicio 78: De decimal a binario
+
+#Escriba un programa que convierta un número decimal (base 10) a binario (base 2). Leer el
+#número decimal del usuario como un número entero y luego use el algoritmo de división que se muestra
+#a continuación para realizar la conversión. Cuando el algoritmo se completa, el resultado contiene el
+#representación binaria del número. Mostrar el resultado, junto con una adecuada
+#mensaje.
+
+
+
+from decimal import *
+
+decimal = Decimal(3.625)
+entero, fraccion = int(decimal // 1), decimal % 1
+
+binario_fraccion = ""
+while fraccion > 0:
+    fraccion = fraccion * 2
+    if fraccion >= 1:
+        binario_fraccion += "1"
+        fraccion -= 1
+    else:
+        binario_fraccion += "0"
+
+binario = bin(entero)[2:] + "." + binario_fraccion
+print("el numero",decimal,"en binario seria",binario)
+
+
+
